@@ -20,7 +20,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kanga333/variable-mapper@master
+    - uses: RaftechNL/action-variable-mapper@v1.0.0
       with:
         key: "${{github.base_ref}}"
         map: |
@@ -56,7 +56,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kanga333/variable-mapper@master
+    - uses: RaftechNL/action-variable-mapper@v1.0.0
       id: export
       with:
         key: "${{github.base_ref}}"
@@ -94,7 +94,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kanga333/variable-mapper@master
+    - uses: RaftechNL/action-variable-mapper@v1.0.0
       id: export
       with:
         key: "first"
@@ -131,7 +131,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kanga333/variable-mapper@master
+    - uses: RaftechNL/action-variable-mapper@v1.0.0
       id: export
       with:
         key: "first"
@@ -168,7 +168,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: kanga333/variable-mapper@master
+    - uses: RaftechNL/action-variable-mapper@v1.0.0
       id: export
       with:
         key: "first"
